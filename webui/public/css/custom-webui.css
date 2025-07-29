@@ -1,34 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import url(https://use.fontawesome.com/releases/v5.0.7/css/all.css);
 
 :root {
-    --color-Dark: #282A36;
-    --color-LessDark: #282A36;
-    --color-Grey: #44475a;
-    --color-GreySelected: #44475a;
-    --color-LightGrey: #44475a;
-    --color-White: #f8f8f2;
-    --color-ProgressBarFG: #f8f8f2;
-    --color-ProgressBarBG: #BD93F9;
-    --color-DarkSelected: #6272a4;
+    --color-Dark: #1f1f1f;
+    --color-LessDark: #252525;
+    --color-Grey: #303030;
+    --color-GreySelected: #3c3c3c;
+    --color-LightGrey: #4c4c4c;
+    --color-White: #ffffff;
+    --color-ProgressBarFG: #ffffff;
+    --color-ProgressBarBG: #3a81f3;
+    --color-DarkSelected: #2b2b2b;
 
-    --color-RatioBad: #ffb86c;
-    --color-RatioAlmost: #FFFFA5;
-    --color-RatioGood: #A4FFFF;
-    --color-RatioBest: #D6ACFF;
+    --color-RatioBad: #ffb74d;
+    --color-RatioAlmost: #fff176;
+    --color-RatioGood: #81c784;
+    --color-RatioBest: #64b5f6;
 
-    --color-BadRed: #FF5555;
-    --color-GoodGreen: #50FA7B;
-    --color-Orange: #FF6E6E;
-    --color-Blue: #BD93F9;
+    --color-BadRed: #e74c3c;
+    --color-GoodGreen: #66bb6a;
+    --color-Orange: #ffa726;
+    --color-Blue: #42a5f5;
 
     --button-color: #34373f;
-    --button-color-hover: #2e78d8;
+    --button-color-hover: #3a81f3;
     --button-text: #eee;
-    --accent-color: #2e78d8;
-    --accent-color-hover: #2e78d8;
-    --text: #F8F8F2;
+    --accent-color: #3a81f3;
+    --accent-color-hover: #3a81f3;
+    --text: #ffffff;
     --text-hover: #fff;
-    --link-color: #bd93f9;
+    --link-color: #42a5f5;
+    --font-family-base: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background: var(--color-Dark);
+    color: var(--text);
 }
 
 /* THEME */
@@ -1554,4 +1562,19 @@ input[type="submit"i]:hover {
 #deleteRuleButton {
     float: right;
     background-image: url('../icons/list-remove.svg');
+}
+
+@media (max-width: 768px) {
+    #desktopNavbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #desktopNavbar li {
+        width: 100%;
+    }
+
+    #desktopNavbar li ul {
+        position: static;
+    }
 }
